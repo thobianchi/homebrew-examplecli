@@ -2,21 +2,21 @@
 class Getgitlabenv < Formula
   desc "Get Gitlab Project env Vars"
   homepage "https://github.com/thobianchi/getGitlabEnv"
-  version "1.0.1"
+  version "1.0.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/thobianchi/getGitlabEnv/releases/download/1.0.1/getGitlabEnv_Darwin_x86_64.tar.gz"
-    sha256 "e10f776baa9bbd6d0e042d77b96111b908a7aafde2c666290de44979a5fa1040"
+    url "https://github.com/thobianchi/gitlabctl/releases/download/1.0.0/getGitlabEnv_Darwin_x86_64.tar.gz"
+    sha256 "0af73e54f0274ae4218248d3f0e18b1056b82753a8edd249d77353c7fb296d2b"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/thobianchi/getGitlabEnv/releases/download/1.0.1/getGitlabEnv_Linux_x86_64.tar.gz"
-      sha256 "ae42befeecee2afd26a2ff2370d0880081c715b4b5fc4480fa77971967f8d0e0"
+      url "https://github.com/thobianchi/gitlabctl/releases/download/1.0.0/getGitlabEnv_Linux_x86_64.tar.gz"
+      sha256 "45d1b4eb1055b52ee3fd838fcaa8fb78c625e392ddb95284f33a6477340540f8"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thobianchi/getGitlabEnv/releases/download/1.0.1/getGitlabEnv_Linux_arm64.tar.gz"
-        sha256 "b250e8bf57405a29d1a6386e61ca5c4fced0fbdd99892e6a79d5e92b89f4640d"
+        url "https://github.com/thobianchi/gitlabctl/releases/download/1.0.0/getGitlabEnv_Linux_arm64.tar.gz"
+        sha256 "3e2173b02801ea1b7bbf7c48d27a094841d0445ca17b23c9a42087656b01b417"
       else
       end
     end
