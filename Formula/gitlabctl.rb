@@ -2,21 +2,21 @@
 class Gitlabctl < Formula
   desc "Get Gitlab Project env Vars"
   homepage "https://github.com/thobianchi/gitlabctl"
-  version "0.2.0"
+  version "0.3.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/thobianchi/gitlabctl/releases/download/v0.2.0/gitlabctl_Darwin_x86_64.tar.gz"
-    sha256 "ea6cf52a5ca1bbf888708313bc041c4317bc9aabac23a4b7b8510e4bf6b870fb"
+    url "https://github.com/thobianchi/gitlabctl/releases/download/v0.3.0/gitlabctl_Darwin_x86_64.tar.gz"
+    sha256 "6001f17fa389cfa48a4bccda9a0646dd3840e1199d0fe39cac4e63a4f46c35fa"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/thobianchi/gitlabctl/releases/download/v0.2.0/gitlabctl_Linux_x86_64.tar.gz"
-      sha256 "70878842fe574182fb03cb059643dbf32089f29af1899bc618e8a11a5450128c"
+      url "https://github.com/thobianchi/gitlabctl/releases/download/v0.3.0/gitlabctl_Linux_x86_64.tar.gz"
+      sha256 "a5ab490b999d10c8fd3cec194d7438dc4d6198faadb6aa9e263e2aa304597ab9"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thobianchi/gitlabctl/releases/download/v0.2.0/gitlabctl_Linux_arm64.tar.gz"
-        sha256 "f4e746cddb4dbe7baed716eebba3bd552f13918e6e8db34bed9fdaebff5050eb"
+        url "https://github.com/thobianchi/gitlabctl/releases/download/v0.3.0/gitlabctl_Linux_arm64.tar.gz"
+        sha256 "d467f11f15db0a3905d0a79382aa7262ab7be63a8b744615245d97d336146ca3"
       else
       end
     end
